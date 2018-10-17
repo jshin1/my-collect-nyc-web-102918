@@ -1,6 +1,6 @@
 def my_collect(array)
   array.collect do |item|
-    if item.length == 2
+    if item.include?(" ")
       item.split(" ").first
     else
       item.upcase
